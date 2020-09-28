@@ -19,6 +19,27 @@ short int MainMenu(); // Function declaration
 short int SalesMenu(); // Using meaningful id
 
 /*
+ * Declaration:
+ * A statement when you ASSIGN a TYPE to an
+ *
+ * Identifier:
+ *  - Do not start with a number
+ *  - It can only start with _ or a letter
+ *  - It can only have letters, numbers and _
+ *  - It cannot have spaces in-between
+ *  - It cannot be a keyword
+ *  > It's maximum length is determined by the compiler implementation
+ *
+ *  Initialization
+ *  int a;
+ *  a = 1;
+ *
+ *  int a = 1; // this is preferred
+ *
+ *  quantity * APPLE  --> Anything that returns a value is an expression
+ */
+
+/*
  * Naming standards !!!!
  *  CamelCase
  *  Snake_Case
@@ -36,7 +57,7 @@ int main() {
 	int mainMenuOption = MainMenu();
 	int sellOption, quantity;
 	int appleCounter = 0, pearCounter = 0, grapeCounter = 0;
-	int customerCounter = 0;
+	int customerCounter = 0; // Initialization
 	double totalMoney = 0.0;
 	double saleSubTotal, customerTotal, tax;
 	while (mainMenuOption != 3){
